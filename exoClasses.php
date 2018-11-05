@@ -8,7 +8,7 @@
     //Creation de la classe Rectangle
     class Rectangle
     {
-//    attributs privés longueur & largeur
+//    attributs privés longueur & largeur de Rectangle
         private $longueur;
         private $largeur;
 
