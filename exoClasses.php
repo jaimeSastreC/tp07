@@ -10,4 +10,7 @@ echo $monRectangle->calculPerimetre()."<br>";
 
 $monRectangle->setCouleur('rouge');
 echo $monRectangle->getCouleur();
+echo "<br>";
+
+$monCarre = new Carre(15);
 

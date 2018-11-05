@@ -24,10 +24,10 @@ class Cercle
     }
 
     function aireCercle(){
-        return $this->rayon*$this->rayon*self::PI;
+        return $this->rayon*$this->rayon*self::PI; // aussi pi()
     }
 
     function sphereCercle(){
-        return 4/3*($this->rayon**3)*self::PI;
+        return 4/3*($this->rayon**3)*self::PI; // aussi pow( base, exp )
     }
 }

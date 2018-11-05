@@ -8,14 +8,14 @@
 
 class Rectangle
 {
-    private $largeur, $longueur, $aire, $perimetre, $couleur, $pos_x, $pos_y;
+    protected $largeur, $longueur, $aire, $perimetre, $couleur, $pos_x, $pos_y;
 
-    function __construct($largeur, $longueur)
+    function __construct(int $largeur, int $longueur)
     {
         $this->setLargeur($largeur);
         $this->setLongueur($longueur);
-        echo $this->getLongueur();
-        echo $this->getLargeur();
+        echo $this->getLongueur()."<br>";
+        echo $this->getLargeur()."<br>";
 
     }
 
@@ -58,5 +58,12 @@ class Rectangle
         return $this->couleur;
     }
 
-    
+    public function setPosition($x, $y){
+        $this->pos_x = $x;
+        $this->pos_y = $y;
+    }
+
+    public function getPosition(){
+        return array($this->pos_x, $this->pos_y) ;
+    }
 }

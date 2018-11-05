@@ -13,8 +13,12 @@ class Carre extends Rectangle
     {
         $this->setLargeur($longueur);
         $this->setLongueur($longueur);
-        echo $this->getLongueur();
-        echo $this->getLargeur();
+        echo $this->getLongueur()."<br>";
+        echo $this->getLargeur()."<br>";
+    }
 
+    function __destruct()
+    {
+        echo "<br> Carré détruit";
     }
 }
